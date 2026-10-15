@@ -1,0 +1,18 @@
+{
+  "name": "hhai0z-apple-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Hai Nguyen (@hhai0z) crafted with Apple Design System tokens and principles.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "apple-design-system",
+    "portfolio",
+    "hhai0z",
+    "minimalism"
+  ],
+  "author": "Hai Nguyen <hainguyen56211@gmail.com>",
+  "license": "MIT"
+}
