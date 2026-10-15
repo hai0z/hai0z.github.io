@@ -154,7 +154,7 @@ Platforms     : Vercel, Netlify, GitHub, Linux, Windows`,
   projects: `=== FEATURED REPOSITORIES (@hai0z) ===
 1. Harmonify       : Full music streaming app like Spotify (React Native, TrackPlayer, Zustand)
 2. hzphim          : Next.js cinema & movie streaming platform (https://hzphim.vercel.app)
-3. e-learning      : Modern online education platform (https://e-learning-one-rho.vercel.app)
+3. Dear Diary 📔   : End-to-end encrypted desktop diary app (Tauri 2, Rust, React, AES-256)
 4. electron_movie  : Cross-platform desktop cinema app (Electron, React, Vite)
 5. first-vue       : Instagram clone with Vue.js, Pinia & Firebase`,
 
@@ -313,6 +313,21 @@ const projectDetails = {
         <li><strong>DaisyUI & Tailwind:</strong> Sleek dark-mode aesthetic with zero runtime styling overhead.</li>
       </ul>
       <a href="https://github.com/hai0z/electron_movie" target="_blank" class="btn-primary">View Electron Movie on GitHub →</a>
+    `
+  },
+  diary: {
+    title: "Dear Diary 📔 • Encrypted Desktop Journal",
+    eyebrow: "Desktop Engineering & Cryptography • Tauri 2 + Rust",
+    body: `
+      <p style="margin-bottom: 16px;">Dear Diary is a privacy-first personal diary application built with Tauri 2, Rust 1.75, and React 18. Designed with zero-knowledge architecture and end-to-end AES-256 encryption.</p>
+      <h4 style="font-size: 16px; margin: 12px 0 6px 0; color: var(--colors-ink);">Core Architecture:</h4>
+      <ul style="padding-left: 20px; margin-bottom: 16px; line-height: 1.6;">
+        <li><strong>AES-256-CBC & PBKDF2:</strong> All diary content is encrypted locally before persistence using keys derived via 100,000 PBKDF2 iterations.</li>
+        <li><strong>Offline-First & Cloud Sync:</strong> Instant reads/writes on local SQLite with background synchronization to MongoDB Atlas.</li>
+        <li><strong>Gemini AI Assistant:</strong> Contextual writing assistance, mood tracking, and habit analytics.</li>
+        <li><strong>Native Desktop Performance:</strong> Rust backend with TipTap rich-text editor and Ant Design / Tailwind UI.</li>
+      </ul>
+      <a href="https://github.com/hai0z/diary" target="_blank" class="btn-primary" style="margin-top: 8px;">View Dear Diary on GitHub →</a>
     `
   }
 };

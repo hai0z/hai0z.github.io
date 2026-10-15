@@ -267,35 +267,40 @@ Native IPC bridge enabled</code>
             </div>
           </article>
 
-          <!-- Card 4 (Span 2): e-Learning Platform -->
-          <article class="bento-card span-2" data-category="web">
+          <!-- Card 4 (Span 2): Dear Diary -->
+          <article class="bento-card span-2" data-category="desktop web">
             <div class="card-top">
-              <div class="card-category">Fullstack EdTech</div>
-              <h3 class="card-title">e-Learning Platform</h3>
+              <div class="card-category">Desktop & Security • Tauri + Rust</div>
+              <h3 class="card-title">Dear Diary 📔</h3>
               <p class="card-description">
-                Comprehensive modern education platform deployed on Vercel. Features interactive lesson tracking, student engagement dashboards, and responsive curriculum navigation.
+                End-to-end encrypted personal diary desktop application built with Tauri 2, Rust 1.75, and React 18. Features AES-256-CBC content encryption, zero-knowledge sync via MongoDB Atlas, offline-first SQLite, Gemini AI writing assistant, and TipTap rich-text editor.
               </p>
               <div class="card-tags">
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Next.js / React</span>
-                <span class="tech-tag">Tailwind CSS</span>
-                <span class="tech-tag">Vercel Deployment</span>
+                <span class="tech-tag">Tauri 2</span>
+                <span class="tech-tag">Rust</span>
+                <span class="tech-tag">React 18</span>
+                <span class="tech-tag">AES-256</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">MongoDB Atlas</span>
+                <span class="tech-tag">TipTap</span>
+                <span class="tech-tag">Gemini AI</span>
               </div>
             </div>
 
             <div class="card-visual">
-              <code>Live LMS Production:
-URL: https://e-learning-one-rho.vercel.app
-Fast server-side rendering, responsive mobile/tablet layout</code>
+              <code>// Dear Diary Zero-Knowledge Security Pipeline
+const cipher = crypto.createCipheriv('aes-256-cbc', derivedKey, iv);
+let encrypted = cipher.update(diaryContent, 'utf8', 'hex');
+// Status: Encrypted local SQLite + Cloud Sync | AI: Gemini Assistant</code>
             </div>
 
             <div class="card-links">
-              <a href="https://e-learning-one-rho.vercel.app" target="_blank" rel="noopener noreferrer" class="card-link-action">
-                <span>View Live Site</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              <a href="#" class="card-link-action open-modal-btn" data-project="diary">
+                <span>Architecture Specs</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
               </a>
-              <a href="https://github.com/hai0z/e-learning" target="_blank" rel="noopener noreferrer" class="card-link-action">
-                <span>View Source Code</span>
+              <a href="https://github.com/hai0z/diary" target="_blank" rel="noopener noreferrer" class="card-link-action">
+                <span>View on GitHub</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </a>
             </div>
@@ -527,7 +532,7 @@ Type "help" to see available commands, or click any shortcut below.
           <ul class="footer-list">
             <li class="footer-item"><a href="https://github.com/hai0z/Harmonify" target="_blank" rel="noopener" class="footer-link">Harmonify (Music App)</a></li>
             <li class="footer-item"><a href="https://github.com/hai0z/hzphim" target="_blank" rel="noopener" class="footer-link">hzphim (Next.js Movie)</a></li>
-            <li class="footer-item"><a href="https://github.com/hai0z/e-learning" target="_blank" rel="noopener" class="footer-link">e-Learning Platform</a></li>
+            <li class="footer-item"><a href="https://github.com/hai0z/diary" target="_blank" rel="noopener" class="footer-link">Dear Diary 📔 (Tauri & Rust)</a></li>
             <li class="footer-item"><a href="https://github.com/hai0z/electron_movie" target="_blank" rel="noopener" class="footer-link">Electron Movie Desktop</a></li>
           </ul>
         </div>

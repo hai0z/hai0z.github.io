@@ -22,7 +22,7 @@ Trang web portfolio cá nhân của **Nguyễn Ngọc Hải (@hai0z)** được 
 
 1. **Harmonify (Music Streaming App)**: Ứng dụng phát nhạc phong cách Spotify viết bằng React Native, TypeScript, TrackPlayer, Zustand, NativeWind, đồng bộ lời bài hát thời gian thực và ZingMP3 API.
 2. **hzphim**: Web xem phim trực tuyến xây dựng với Next.js, React Player, Zustand, triển khai trên Vercel tại [hzphim.vercel.app](https://hzphim.vercel.app).
-3. **e-Learning Platform**: Nền tảng học trực tuyến hiện đại với TypeScript, Next.js / React triển khai tại [e-learning-one-rho.vercel.app](https://e-learning-one-rho.vercel.app).
+3. **Dear Diary 📔 (Encrypted Journal App)**: Ứng dụng nhật ký cá nhân mã hóa đầu cuối (E2EE) viết bằng Tauri 2, Rust 1.75, React 18, AES-256-CBC, SQLite local-first, MongoDB Atlas sync và tích hợp Gemini AI. Kho lưu trữ tại [github.com/hai0z/diary](https://github.com/hai0z/diary).
 4. **Electron Cinema Desktop**: Ứng dụng xem phim desktop đa nền tảng (macOS, Windows, Linux) viết bằng Electron, React, Vite, Tailwind CSS.
 
 ---
