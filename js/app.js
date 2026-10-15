@@ -1,6 +1,6 @@
 /**
  * Apple Design System Portfolio App
- * Profile: Hai Nguyen (@hhai0z)
+ * Profile: Nguyễn Ngọc Hải (@hai0z)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -50,10 +50,8 @@ function setTheme(theme) {
   const themeIcon = document.getElementById('theme-icon');
   if (themeIcon) {
     if (theme === 'dark') {
-      // Sun icon for switching back to light
       themeIcon.innerHTML = `<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>`;
     } else {
-      // Moon icon for switching to dark
       themeIcon.innerHTML = `<path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>`;
     }
   }
@@ -139,40 +137,42 @@ function initProjectFilter() {
    INTERACTIVE MACOS/APPLE STYLE TERMINAL
    -------------------------------------------------------------------------- */
 const terminalData = {
-  about: `Hai Nguyen (@hhai0z)
-Role: Systems & Fullstack Engineer
-Location: Vietnam
-Focus: Low-latency backends, distributed systems, clean interface architecture
-Email: hainguyen56211@gmail.com
-GitHub: https://github.com/hhai0z`,
+  about: `Nguyễn Ngọc Hải (@hai0z)
+Role: Fullstack & Mobile Engineer
+Location: Vietnam (VN)
+Profile: https://github.com/hai0z
+Public Repositories: 50+
+Key Interests: React Native, Next.js, Electron, Audio streaming & Modern UI/UX`,
 
-  skills: `=== TECHNICAL STACK ===
-Core Languages : Go, TypeScript, Rust, Python, SQL
-Frontend       : Next.js, React, Apple Design Tokens, WebGL, Tailwind
-Backend        : gRPC, Node.js, Echo/Gin, Actix, Redis, PostgreSQL
-Architecture   : Microservices, Event-Driven, CRDTs, Raft Consensus
-Tooling        : Docker, Kubernetes, Linux, GitHub Actions, AWS`,
+  skills: `=== TECHNICAL CAPABILITIES ===
+Mobile Dev    : React Native, TrackPlayer, NativeWind, Flutter, Dart
+Web & Frontend: Next.js, React, Vue.js, TypeScript, JavaScript, TailwindCSS, DaisyUI
+Desktop       : Electron.js, Vite
+State & APIs  : Zustand, Pinia, Firebase, ZingMP3 API, RESTful APIs
+Platforms     : Vercel, Netlify, GitHub, Linux, Windows`,
 
-  projects: `=== NOTABLE REPOSITORIES ===
-1. OmniEngine   : Distributed event orchestration runtime (Go, gRPC)
-2. Aura UI      : Token-driven zero-dependency UI system (Apple specs)
-3. PulseKV      : Embedded Raft-based distributed key-value store
-4. NeuralStream : Low-latency WebRTC & multi-modal processing`,
+  projects: `=== FEATURED REPOSITORIES (@hai0z) ===
+1. Harmonify       : Full music streaming app like Spotify (React Native, TrackPlayer, Zustand)
+2. hzphim          : Next.js cinema & movie streaming platform (https://hzphim.vercel.app)
+3. e-learning      : Modern online education platform (https://e-learning-one-rho.vercel.app)
+4. electron_movie  : Cross-platform desktop cinema app (Electron, React, Vite)
+5. first-vue       : Instagram clone with Vue.js, Pinia & Firebase`,
 
-  stats: `=== SYSTEM METRICS ===
-Target Availability : 99.99%
-P99 API Latency    : 12.4ms
-Code Coverage      : 94.6%
-Type Safety        : 100% Strict TypeScript / Go type checks`,
+  stats: `=== GITHUB METRICS ===
+Username         : hai0z (Nguyễn Ngọc Hải)
+Public Repos     : 50
+Member Since     : March 2020
+Primary Language : TypeScript & JavaScript
+Portfolio Design : Apple Human Interface Guidelines`,
 
   help: `Available commands:
-  about     - View background and biography
-  skills    - List programming languages & architecture skills
-  projects  - Show featured engineering repositories
-  stats     - View engineering & latency benchmarks
+  about     - View developer profile & background
+  skills    - List technologies, frameworks & runtimes
+  projects  - Show real repositories & live demos
+  stats     - View GitHub statistics & account information
   clear     - Clear the terminal screen
   theme     - Toggle light/dark appearance
-  github    - Open GitHub profile (@hhai0z)`
+  github    - Open https://github.com/hai0z in browser`
 };
 
 function initTerminal() {
@@ -188,7 +188,7 @@ function initTerminal() {
     
     // Add command echo
     const echoLine = document.createElement('div');
-    echoLine.innerHTML = `<span style="color:var(--colors-accent)">hhai0z@cli:~$</span> ${escapeHtml(cmd)}`;
+    echoLine.innerHTML = `<span style="color:var(--colors-accent)">hai0z@cli:~$</span> ${escapeHtml(cmd)}`;
     output.appendChild(echoLine);
 
     if (rawCmd === 'clear') {
@@ -204,8 +204,8 @@ function initTerminal() {
       localStorage.setItem('apple-theme', next);
       appendResponse(`Theme switched to ${next} mode.`);
     } else if (rawCmd === 'github') {
-      appendResponse(`Opening https://github.com/hhai0z ...`);
-      window.open('https://github.com/hhai0z', '_blank');
+      appendResponse(`Opening https://github.com/hai0z ...`);
+      window.open('https://github.com/hai0z', '_blank');
     } else if (terminalData[rawCmd]) {
       appendResponse(terminalData[rawCmd]);
     } else if (rawCmd === '') {
@@ -286,54 +286,33 @@ function initCopyEmail() {
    MODALS (Architecture Deep-Dive)
    -------------------------------------------------------------------------- */
 const projectDetails = {
-  omniflow: {
-    title: "OmniFlow • Distributed Workflow Engine",
-    eyebrow: "Systems Engineering & Distributed Runtime",
+  harmonify: {
+    title: "Harmonify • Music Streaming Application",
+    eyebrow: "Mobile Architecture & Audio Processing",
     body: `
-      <p style="margin-bottom: 16px;">OmniFlow is an event-driven workflow execution engine built in Go. It allows stateful multi-step pipelines to execute deterministically across asynchronous distributed workers with automated replay, checkpointing, and fault recovery.</p>
-      <h4 style="font-size: 16px; margin: 12px 0 6px 0; color: var(--colors-ink);">Core Architecture:</h4>
+      <p style="margin-bottom: 16px;">Harmonify is a rich mobile audio experience modeled after Spotify. Designed for smooth background playback and synchronized real-time lyrics.</p>
+      <h4 style="font-size: 16px; margin: 12px 0 6px 0; color: var(--colors-ink);">Technical Implementation:</h4>
       <ul style="padding-left: 20px; margin-bottom: 16px; line-height: 1.6;">
-        <li><strong>Deterministic Event Sourcing:</strong> Every state change is journaled to append-only logs for zero-data-loss failover.</li>
-        <li><strong>Wasm Sandboxing:</strong> Custom user transformations execute inside lightweight WebAssembly containers.</li>
-        <li><strong>High-Throughput gRPC:</strong> Sub-5ms internal consensus loop utilizing raft clustering.</li>
+        <li><strong>Native TrackPlayer:</strong> Background playback capability with lockscreen audio controls and remote notification handlers.</li>
+        <li><strong>Zustand State Engine:</strong> Minimalist, reactive global player state without Redux boilerplate.</li>
+        <li><strong>ZingMP3 & Lyrics Sync:</strong> Parsing LRC timestamps to render fluid karaoke-style animated lyrics.</li>
+        <li><strong>NativeWind:</strong> Tailwind CSS utility classes inside React Native for consistent styling.</li>
       </ul>
-      <div style="background-color: var(--colors-surface); padding: 14px; font-family: var(--font-mono); font-size: 12px; margin-bottom: 16px;">
-// OmniFlow Pipeline Definition Sample
-engine.RegisterPipeline("telemetry-drain", []Step{
-  { Name: "ingest", Timeout: 15 * time.Millisecond },
-  { Name: "wasm-sanitize", Runtime: WasmRuntimeV2 },
-  { Name: "parquet-sink", BatchSize: 5000 },
-})
-      </div>
-      <a href="https://github.com/hhai0z" target="_blank" class="btn-primary" style="margin-top: 8px;">Explore on GitHub →</a>
+      <a href="https://github.com/hai0z/Harmonify" target="_blank" class="btn-primary" style="margin-top: 8px;">View Harmonify on GitHub →</a>
     `
   },
-  auraui: {
-    title: "Aura UI • Apple Design Token System",
-    eyebrow: "Design Systems & Web Performance",
+  electron_movie: {
+    title: "Electron Cinema • Desktop Movie Player",
+    eyebrow: "Desktop Engineering & Native Integration",
     body: `
-      <p style="margin-bottom: 16px;">A zero-dependency UI token system and component architecture modeled strictly after Apple's design principles. Zero drop-shadows, pure color-blocking, sharp 0px card borders, and responsive 3-column layouts.</p>
+      <p style="margin-bottom: 16px;">A dedicated desktop cinema streaming application that integrates modern web technologies with native desktop performance.</p>
       <h4 style="font-size: 16px; margin: 12px 0 6px 0; color: var(--colors-ink);">Key Highlights:</h4>
       <ul style="padding-left: 20px; margin-bottom: 16px; line-height: 1.6;">
-        <li><strong>WCAG AAA Compliance:</strong> Color contrast ratios and 2px visible focus rings for keyboard navigation.</li>
-        <li><strong>Pure Color Blocking:</strong> Eliminates GPU shadow compositing for 60fps scrolling and instant paint times.</li>
-        <li><strong>CSS Variables Ramp:</strong> Instant dark mode switching with zero layout recalculation.</li>
+        <li><strong>Vite + React:</strong> Instant hot module reloading and optimized bundle size.</li>
+        <li><strong>Frameless Window Controls:</strong> Custom macOS and Windows title bars with native drag regions.</li>
+        <li><strong>DaisyUI & Tailwind:</strong> Sleek dark-mode aesthetic with zero runtime styling overhead.</li>
       </ul>
-      <a href="https://github.com/hhai0z" target="_blank" class="btn-primary">View Repository →</a>
-    `
-  },
-  pulsekv: {
-    title: "PulseKV • In-Memory Storage Engine",
-    eyebrow: "Database Internals & Storage",
-    body: `
-      <p style="margin-bottom: 16px;">PulseKV is an in-memory key-value database built with Go. Features an LSM-tree persistent storage engine, write-ahead logging (WAL), and concurrent skip-lists for read-heavy workloads.</p>
-      <h4 style="font-size: 16px; margin: 12px 0 6px 0; color: var(--colors-ink);">Performance Specs:</h4>
-      <ul style="padding-left: 20px; margin-bottom: 16px; line-height: 1.6;">
-        <li>Over 180,000 requests/sec on single-node benchmarking.</li>
-        <li>Crash resilience via atomic write-ahead log replay.</li>
-        <li>Zero lock-contention via fine-grained sharded hash tables.</li>
-      </ul>
-      <a href="https://github.com/hhai0z" target="_blank" class="btn-primary">View on GitHub →</a>
+      <a href="https://github.com/hai0z/electron_movie" target="_blank" class="btn-primary">View Electron Movie on GitHub →</a>
     `
   }
 };
@@ -385,7 +364,7 @@ function initModals() {
    GITHUB PROFILE DATA INTEGRATION
    -------------------------------------------------------------------------- */
 async function fetchGitHubData() {
-  const username = 'hhai0z';
+  const username = 'hai0z';
   const repoCountEl = document.getElementById('gh-repo-count');
   const followersEl = document.getElementById('gh-followers');
 
@@ -394,14 +373,10 @@ async function fetchGitHubData() {
     if (res.ok) {
       const data = await res.json();
       if (repoCountEl && data.public_repos !== undefined) {
-        repoCountEl.textContent = data.public_repos;
-      }
-      if (followersEl && data.followers !== undefined) {
-        followersEl.textContent = data.followers;
+        repoCountEl.textContent = `${data.public_repos}+`;
       }
     }
   } catch (err) {
-    // Graceful fallback to static verified metrics
-    console.log('GitHub API offline or rate-limited; using fallback metrics.');
+    console.log('GitHub API offline or rate-limited; using cached metrics.');
   }
 }

@@ -1,6 +1,6 @@
-# Apple Design System Portfolio — Hai Nguyen (@hhai0z)
+# Apple Design System Portfolio — Nguyễn Ngọc Hải (@hai0z)
 
-Trang web portfolio cá nhân của **Hai Nguyen (@hhai0z)** được thiết kế và xây dựng theo chuẩn xác định hệ thống nhận diện số **Apple Design System** (từ bảng thiết kế token chính thức của Apple).
+Trang web portfolio cá nhân của **Nguyễn Ngọc Hải (@hai0z)** được thiết kế và xây dựng theo chuẩn xác định hệ thống nhận diện số **Apple Design System** (từ bảng thiết kế token chính thức của Apple).
 
 ---
 
@@ -18,25 +18,22 @@ Trang web portfolio cá nhân của **Hai Nguyen (@hhai0z)** được thiết k�
 
 ---
 
-## 🚀 Tính năng nổi bật
+## 🚀 Các dự án thực tế nổi bật của @hai0z
 
-1. **Keynote Hero Presentation**: Tiêu đề Display Large 56px với nhịp chữ chuẩn `-0.28px` tracking và dải thông số 3 cột đo lường hiệu năng.
-2. **Interactive Bento Grid Showcase**: Thẻ dự án góc sắc (0px) với bộ lọc thời gian thực (`Distributed Systems`, `Fullstack`, `Open Source`).
-3. **Interactive Terminal (`hhai0z@cli:~$`)**: Giả lập Terminal macOS Apple tương tác trực tiếp với các lệnh: `about`, `skills`, `projects`, `stats`, `theme`, `clear`.
-4. **Project Architecture Modal**: Popup đào sâu kiến trúc hệ thống, Wasm sandboxing, Raft consensus với phím tắt `Esc` và click-outside.
-5. **Fast Copy-to-Clipboard & Apple Toast**: Nút sao chép địa chỉ email `hainguyen56211@gmail.com` với thông báo Toast trượt ở `z-index: 10000`.
-6. **Live Theme Switcher**: Chuyển đổi Dark Mode / Light Mode mượt mà và lưu trạng thái vào `localStorage`.
+1. **Harmonify (Music Streaming App)**: Ứng dụng phát nhạc phong cách Spotify viết bằng React Native, TypeScript, TrackPlayer, Zustand, NativeWind, đồng bộ lời bài hát thời gian thực và ZingMP3 API.
+2. **hzphim**: Web xem phim trực tuyến xây dựng với Next.js, React Player, Zustand, triển khai trên Vercel tại [hzphim.vercel.app](https://hzphim.vercel.app).
+3. **e-Learning Platform**: Nền tảng học trực tuyến hiện đại với TypeScript, Next.js / React triển khai tại [e-learning-one-rho.vercel.app](https://e-learning-one-rho.vercel.app).
+4. **Electron Cinema Desktop**: Ứng dụng xem phim desktop đa nền tảng (macOS, Windows, Linux) viết bằng Electron, React, Vite, Tailwind CSS.
 
 ---
 
 ## 💻 Cách chạy trên máy cục bộ (Local Development)
 
-### Cách 1: Chạy trực tiếp (Không cần cài thêm thư viện)
-Bạn chỉ cần mở trực tiếp tệp `index.html` trong bất kỳ trình duyệt nào (Chrome, Safari, Edge, Firefox).
+### Cách 1: Chạy trực tiếp
+Mở trực tiếp tệp `index.html` trong trình duyệt bất kỳ.
 
-### Cách 2: Chạy qua Node.js HTTP Server có sẵn
+### Cách 2: Chạy qua Node.js Server
 ```bash
-# Khởi động server nội bộ
 npm start
 # hoặc
 node server.js
@@ -45,15 +42,15 @@ Truy cập: `http://localhost:3000`
 
 ---
 
-## 🌐 Triển khai lên GitHub Pages (cho `hhai0z.github.io`)
+## 🌐 Triển khai lên GitHub Pages (cho `hai0z.github.io`)
 
-1. Đẩy mã nguồn lên repository trên GitHub:
+1. Đẩy mã nguồn lên repository `hai0z.github.io` trên GitHub của bạn:
    ```bash
    git add .
-   git commit -m "feat: Apple Design System portfolio for @hhai0z"
+   git commit -m "feat: Apple Design System portfolio for @hai0z"
    git branch -M main
-   git remote add origin https://github.com/hhai0z/hhai0z.github.io.git
+   git remote add origin https://github.com/hai0z/hai0z.github.io.git
    git push -u origin main
    ```
-2. Vào tab **Settings** của repository trên GitHub -> mục **Pages** -> chọn nhánh `main` và thư mục `/ (root)` -> nhấn **Save**.
-3. Trang web của bạn sẽ tự động hoạt động trực tiếp tại địa chỉ: `https://hhai0z.github.io`
+2. Vào **Settings** trên GitHub -> mục **Pages** -> chọn nhánh `main` và thư mục `/ (root)` -> nhấn **Save**.
+3. Trang web sẽ hoạt động trực tiếp tại địa chỉ: `https://hai0z.github.io`
