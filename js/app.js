@@ -163,7 +163,7 @@ Username         : hai0z (Nguyễn Ngọc Hải)
 Public Repos     : 50
 Member Since     : March 2020
 Primary Language : TypeScript & JavaScript
-Portfolio Design : Apple Human Interface Guidelines`,
+Focus Areas      : Mobile Apps, Modern Web & Desktop Tools`,
 
   help: `Available commands:
   about     - View developer profile & background
